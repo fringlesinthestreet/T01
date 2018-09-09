@@ -1,3 +1,7 @@
+# My ignored files
+
+.envrc
+
 
 # Created by https://www.gitignore.io/api/linux,macos,python,pycharm
 
