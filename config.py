@@ -7,7 +7,7 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = ""
-    SQLALCHEMY_DATABASE_URI = "postgresql://localhost/tareauno"
+    SQLALCHEMY_DATABASE_URI = "postgresql:///tareauno"
 
 
 class ProductionConfig(Config):
