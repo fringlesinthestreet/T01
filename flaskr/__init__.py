@@ -1,26 +1,17 @@
-from flask import Flask
+from flask import Flask, render_template, request
 import os
 from flask_sqlalchemy import SQLAlchemy
 import env_variables
+from flaskr.models import Posts, db, app
+import datetime
+import time
 
-app = Flask(__name__)
-app.config.from_object(os.environ['APP_SETTINGS'])
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
 
 def create_app():
 
     db.init_app(app)
 
     return app
-
-
-import os
-from flask import render_template, request, db, current_app as app
-from flaskr.models import Posts
-import datetime
-import time
 
 
 @app.route('/', methods=['GET', 'POST'])
