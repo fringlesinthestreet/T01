@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 from flask_sqlalchemy import SQLAlchemy
-
+from __init__ import db
 
 class Posts(db.Model):
     __tablename__ = 'posts'

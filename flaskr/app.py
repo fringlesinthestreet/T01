@@ -1,6 +1,6 @@
 import os
-from flask import render_template, request
-from models import Posts, app, db
+from flask import render_template, request, db, current_app as app
+from flaskr.models import Posts
 import datetime
 import time
 
