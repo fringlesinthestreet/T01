@@ -1,5 +1,6 @@
 # My ignored files
 
+env_variables.py
 .envrc
 
 

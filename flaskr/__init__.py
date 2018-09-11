@@ -1,6 +1,7 @@
 from flask import Flask
 import os
 from flask_sqlalchemy import SQLAlchemy
+import env_variables
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
